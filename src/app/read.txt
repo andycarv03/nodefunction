@@ -1,0 +1,13 @@
+//get student
+
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8000/EnrolledStudent/107
+
+//add student
+curl -X POST -F '"PRno"=106' -F '"password"=106' -F '"Seatno"=6' -F '"fname"=Andy' -F '"mname"=R' -F '"lname"=Carvalho' -F '"CName"=pcce' -F '"branch"=Infotech' -F '"YOP"=2019' -F '"email"=andycar@ymail.com' -F '"number"=987654321' http://localhost:8000/certificates
+
+//get certifcate
+
+curl -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET http://localhost:8000/certificates
+
+
+
